@@ -112,7 +112,6 @@ p {
   background-color: #f0f0f0; /* 初始背景色 */
 }
 
-/* 鼠标靠近时改变选项颜色和大小 */
 .horizontal-options li:hover a {
   background-color: #4caf50; /* 鼠标靠近时变为绿色 */
   color: #fff; /* 文本颜色变为白色 */
