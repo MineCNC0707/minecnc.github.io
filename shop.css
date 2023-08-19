@@ -56,3 +56,31 @@ header img {
 body {
   padding-top: 50px; /* 为头部预留空间 */
 }
+
+/* 荧幕适配 */
+
+/* 对于小屏幕设备（例如手机） */
+@media (max-width: 600px) {
+  .product {
+    width: 100%; /* 占据整个宽度 */
+    margin: 0; /* 去除边距 */
+  }
+
+  .addToCartBtn {
+    top: 5px; /* 调整购物车按钮的位置 */
+    right: 5px;
+    padding: 3px 6px; /* 调整按钮大小 */
+  }
+}
+
+/* 对于中等屏幕设备（例如平板） */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .product {
+    width: calc(50% - 20px); /* 一行两列布局 */
+  }
+}
+
+/* 对于大屏幕设备（例如台式电脑） */
+@media (min-width: 1025px) {
+  /* 保持默认样式 */
+}

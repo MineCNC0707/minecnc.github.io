@@ -116,3 +116,35 @@ p {
   background-color: #4caf50; /* 鼠标靠近时变为绿色 */
   color: #fff; /* 文本颜色变为白色 */
 }
+
+/* shop.css */
+
+/* 添加购物车物品的淡出效果 */
+.product.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* 添加购物车物品的淡入效果 */
+.product.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* 对于小屏幕设备，例如手机 */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px; /* 减小容器的内边距 */
+  }
+
+  .horizontal-options {
+    flex-direction: column; /* 垂直排列选项 */
+  }
+
+  .horizontal-options li {
+    width: 100%; /* 选项占满整个宽度 */
+    margin-bottom: 10px; /* 选项之间增加一些垂直间距 */
+  }
+}
