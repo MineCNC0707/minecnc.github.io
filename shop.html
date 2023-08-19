@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="icon" href="shop.css" />
+    <title>| 商场 |</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="mineCNClogo.png" alt="商店名称" /></a>
+    </header>
+    <div class="product">
+      <a class="addToCartBtn" onclick="addToCart(1)">+</a>
+      <img src="product1.jpg" alt="产品1" />
+      <h2>产品名称1</h2>
+      <p>公司：公司名称1</p>
+      <p>出版社：出版社名称1</p>
+      <p>编号：产品编号1</p>
+      <p>价格：$50.00</p>
+    </div>
+    <div class="product">
+      <a class="addToCartBtn" onclick="addToCart(2)">+</a>
+      <img src="product2.jpg" alt="产品2" />
+      <h2>产品名称2</h2>
+      <p>公司：公司名称2</p>
+      <p>出版社：出版社名称2</p>
+      <p>编号：产品编号2</p>
+      <p>价格：$45.00</p>
+    </div>
+    <!-- 添加更多产品 -->
+
+    <div id="cart">
+      <!-- 购物车内容将在 JavaScript 中更新 -->
+    </div>
+
+    <script src="shop.js"></script>
+  </body>
+</html>

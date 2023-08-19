@@ -1,56 +1,119 @@
+/* style.css */
 body {
   background-color: aliceblue;
+  margin: 0;
 }
 
-h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #3498db;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  transform: scale(1.1);
-  background-color: #e74c3c;
-}
-
-/* style.css */
 .container {
-  display: flex;
-  justify-content: left;
-  align-items: normal;
-  height: 10vh;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #3498db;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  transform: scale(1.1);
-  background-color: #e74c3c;
+  padding: 20px;
 }
 
 p {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: large;
-  box-shadow: 1px 1.2px 1.8px;
+  height: 100px;
+  margin: 0;
+}
+
+#PlayerCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+#menuButton {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+#drawer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* 样式化水平选项 */
+.horizontal-options {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+.horizontal-options li {
+  margin-right: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.horizontal-options a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+/* 鼠标靠近时改变框架颜色 */
+#drawer:hover {
+  background-color: #4caf50;
+}
+
+/* 版本信息 */
+#drawer p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #777;
+}
+
+/* 样式化抽屉 */
+#drawer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.horizontal-options {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* 让选项平均分布 */
+}
+
+.horizontal-options li {
+  width: 30%; /* 设置选项的宽度 */
+  text-align: center; /* 居中文本 */
+  transition: transform 0.3s; /* 添加过渡效果 */
+}
+
+.horizontal-options a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: block; /* 让整个选项可点击 */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0; /* 初始背景色 */
+}
+
+/* 鼠标靠近时改变选项颜色和大小 */
+.horizontal-options li:hover a {
+  background-color: #4caf50; /* 鼠标靠近时变为绿色 */
+  color: #fff; /* 文本颜色变为白色 */
 }

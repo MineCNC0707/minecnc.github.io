@@ -1,0 +1,58 @@
+/* shop.css */
+
+/* 基本产品样式 */
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: calc(33.33% - 20px); /* 一行三列布局，考虑到间距 */
+  float: left;
+  transition: background-color 0.3s; /* 添加过渡效果 */
+  border-radius: 10px; /* 圆角边框 */
+  position: relative; /* 用于定位购物车按钮 */
+}
+
+/* 鼠标悬停时高亮绿色 */
+.product:hover {
+  background-color: #aaffaa;
+}
+
+/* 购物车按钮样式 */
+.addToCartBtn {
+  position: absolute;
+  top: 10px; /* 距离顶部10px */
+  right: 10px; /* 距离右侧10px */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* 添加过渡效果 */
+  border-radius: 50%; /* 圆形按钮 */
+}
+
+/* 鼠标悬停在购物车按钮上时变亮 */
+.addToCartBtn:hover {
+  background-color: #45a049;
+}
+
+/* 头部样式 */
+header {
+  display: contents;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 100px; /* 根据您的需求调整logo的大小 */
+  height: auto;
+  display: block;
+}
+
+/* 调整页面主体样式，适应头部 */
+body {
+  padding-top: 50px; /* 为头部预留空间 */
+}
