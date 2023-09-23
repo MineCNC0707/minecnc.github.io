@@ -1,0 +1,91 @@
+/* 大标题 */
+.title {
+  background-color: #f2f2f2;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* 指令教学选择卡 */
+.card {
+  background-color: #fff;
+  width: 288px;
+  height: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.card p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* 导航栏 */
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.list-link {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.list-link:hover {
+  background-color: #555;
+}
+
+/* 布局模板 */
+header {
+  background-color: #00c3ff;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* 响应式 */
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 45%;
+    margin: 10px 2.5%;
+  }
+
+  .list-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <script src="json_command_maker.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="json_command_maker.css" />
+    <title>Json指令生成器(基岩版) - MineCNC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <img src="title.png" width="50%" />
+    </header>
+    <section>
+      <div class="form">
+        <h1 style="text-align: center" class="title_text_cmd">Json消息指令(titleraw/tellraw)</h1>
+        <div class="command">
+          <p style="font-size: 20px; margin: 10px; font-weight: bold">预览:</p>
+          <p class="cmd_text" id="cmd_text2">指令预览处</p>
+        </div>
+        <br />
+        <div class="command">
+          <p style="font-size: 20px; margin: 10px; font-weight: bold">指令:</p>
+          <p class="cmd_text" id="cmd_text">{"rawtext":[]}</p>
+        </div>
+        <br />
+        <form class="sign_up" method="get">
+          <div class="input_box" style="float: left">
+            <h2 class="sign_text">添加文字(支持\n和§):</h2>
+            <input class="input" type="text" id="input_text" />
+            <strong><input type="button" value="添加" class="button" onclick="TextButton()" /></strong>
+          </div>
+          <div class="input_box2" style="float: left">
+            <h2 class="sign_text">添加记分板(目标实体,记分板):</h2>
+            <input class="input" type="text" id="input_scores" />
+            <input class="input" type="text" id="input_scores2" />
+            <strong><input type="button" value="添加" class="button" onclick="ScoresButton()" /></strong>
+          </div>
+          <div class="input_box" style="float: left">
+            <h2 class="sign_text">添加实体名:</h2>
+            <input class="input" type="text" id="input_name" />
+            <strong><input type="button" value="添加" class="button" onclick="NameButton()" /></strong>
+          </div>
+          <div class="input_box" style="float: left">
+            <h2 class="sign_text">动作:</h2>
+            <br />
+            <strong
+              ><input type="button" value="删除上一个" class="button" onclick="back()" style="width: 31%"
+            /></strong>
+            <strong
+              ><input type="button" value="删除全部" class="button" onclick="allded()" style="width: 31%"
+            /></strong>
+            <strong
+              ><input type="button" value="一键复制" class="button" onclick="copyText('cmd_text')" style="width: 31%"
+            /></strong>
+          </div>
+          <div class="input_box" style="float: left" id="settingg">
+            <h2 class="sign_text">类型设置:</h2>
+            <br />
+            <select id="setting" onchange="titleraw()">
+              <option>未选择</option>
+              <option value="set1">titleraw actionbar</option>
+              <option value="set2">tellraw @a</option>
+              <option value="set3">tellraw @p</option>
+            </select>
+          </div>
+          <br />
+          <br />
+          <br />
+        </form>
+        <br />
+        <br />
+      </div>
+    </section>
+    <footer>
+      <p>© 由MineCNC，版权所有</p>
+    </footer>
+  </body>
+</html>
